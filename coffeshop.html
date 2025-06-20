@@ -5,28 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Warkop Roeang Tenang</title>
 <style>
-
+  /* Import Google Fonts */
   @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-  
-  {
+  /* Reset some default styles */
+  * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
-  @media (max-width: 768px) {
-    body {
-    font-size: 14px; 
-  }
-  nav ul {
-    flex-direction: column; 
-  }
-  .promo-section {
-    flex-direction: column; 
-  }
-  .menu-section {
-    flex-direction: column;
-  }
-}
   body {
     font-family: 'Poppins', sans-serif;
     background: #f4ebe6;
@@ -139,7 +125,7 @@ nav a:focus {
   }
   .menu-category {
       flex: 1;
-      min-width: 50px;
+      min-width: 200px;
     }
   .menu-section {
     display: flex;
@@ -161,7 +147,7 @@ nav a:focus {
   .menu-items {
     display: flex;
     justify-content: space-around;
-    margin-top: 10px;
+    margin-top: 30px;
     flex-wrap: wrap;
     gap: 25px;
   }
@@ -173,7 +159,7 @@ nav a:focus {
   }
   #menu {
     display: flex;
-    gap: 5rem;
+    gap: 15rem;
     justify-content: center;
   }
   h2 {
@@ -184,9 +170,9 @@ nav a:focus {
   .menu-item {
     display: flex;
     justify-content: space-between;
-    padding: 1px 0;
+    padding: 6px 0;
     border-bottom: 1px solid #e0d4c3;
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
    .item {
     display: flex;
@@ -197,11 +183,15 @@ nav a:focus {
    .item:hover {
     transform: translateY(-10px);
   }
+  .menu-column {
+    flex: 1;
+    min-width: 0;
+  }
   .menu-category {
     margin-bottom: 5rem;
   }
   .menu-item span:first-child {
-    font-weight: 150;
+    font-weight: 600;
   }
   footer {
     margin-top: 50px;
@@ -265,6 +255,7 @@ nav a:focus {
   <h2>Our Menu</h2>
     <section class="menu-section" aria-label="Featured Coffee Menu">
      <section id="menu">
+    <div class="menu-column">
     <div class="menu-category">
   <h2>ES KOPI SUSU</h2>
     <div class="menu-item"><span>Basuki</span><span>18</span></div>
@@ -290,6 +281,7 @@ nav a:focus {
     <div class="menu-item"><span>Long Black Berry</span><span>15</span></div>
   </div>
   </div>
+    <div class="menu-column">
     <div class="menu-category">
   <h2>SPECIAL MILK BASIC</h2>
     <div class="menu-item"><span>Matcha Green</span><span>18</span></div>
@@ -347,3 +339,8 @@ nav a:focus {
   </footer>
 </body>
 </html>
+
+
+
+
+
