@@ -5,14 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Warkop Roeang Tenang</title>
 <style>
-  /* Import Google Fonts */
+
   @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-  /* Reset some default styles */
-  * {
+  
+  {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
+  @media (max-width: 768px) {
+    body {
+    font-size: 14px; 
+  }
+  nav ul {
+    flex-direction: column; 
+  }
+  .promo-section {
+    flex-direction: column; 
+  }
+  .menu-section {
+    flex-direction: column;
+  }
+}
   body {
     font-family: 'Poppins', sans-serif;
     background: #f4ebe6;
